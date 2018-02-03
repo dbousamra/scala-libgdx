@@ -21,8 +21,10 @@ object Settings {
     libraryDependencies ++= Seq(
       "com.esotericsoftware" % "kryonet" % "2.+",
       "com.badlogicgames.gdx" % "gdx" % libgdxVersion.value,
+      "com.badlogicgames.gdx" % "gdx-box2d" % libgdxVersion.value,
       "com.badlogicgames.gdx" % "gdx-backend-lwjgl" % libgdxVersion.value,
-      "com.badlogicgames.gdx" % "gdx-platform" % libgdxVersion.value classifier "natives-desktop"
+      "com.badlogicgames.gdx" % "gdx-platform" % libgdxVersion.value classifier "natives-desktop",
+      "com.badlogicgames.gdx" % "gdx-box2d-platform" % libgdxVersion.value classifier "natives-desktop"
     ),
     javacOptions ++= Seq(
       "-Xlint",
